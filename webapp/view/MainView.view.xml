@@ -2,5 +2,13 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
+    <content>
+    <List items="{/Categories }">
+    <items>
+    <StandardListItem title="{ID}"  description="{Name}"></StandardListItem>
+    </items>
+    </List>
+    
+    </content>
     </Page>
 </mvc:View>
