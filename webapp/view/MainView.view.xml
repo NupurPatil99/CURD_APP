@@ -3,12 +3,25 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
     <content>
-    <List items="{/Categories }">
-    <items>
-    <StandardListItem title="{ID}"  description="{Name}"></StandardListItem>
-    </items>
-    </List>
-    
+    <Table id="_IDGenTable" items="{/Categories}" >
+      <columns>
+        <Column id="_IDGenColumn">
+          <Label id="_IDGenLabel" text="ID" />
+        </Column>
+        <Column id="_IDGenColumn1">
+          <Text id="_IDGenText" text="Name" />
+        </Column>
+      </columns>
+      <items>
+        <ColumnListItem id="_IDGenColumnListItem1">
+          <cells>
+            <Text id="_IDGenText1" text="{ID}" />
+            <Text id="_IDGenText2" text="{Name}" />
+          </cells>
+        </ColumnListItem>
+      </items>
+
+    </Table>
     </content>
     </Page>
 </mvc:View>
